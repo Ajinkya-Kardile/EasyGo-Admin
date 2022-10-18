@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow tools:ignore="UselessParent">
+
+    <TextView
+        android:id="@+id/SrNoTBV"
+        android:background="@drawable/table_cell_bg"
+        android:layout_width="70dp"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:id="@+id/DateTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:id="@+id/BusNoTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:id="@+id/FromLocationTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:id="@+id/ToLocationTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/StartTimeTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/EndTimeTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:id="@+id/SeatTypeTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:id="@+id/AvailableSeatsTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:id="@+id/TicketPriceTBV"
+        android:gravity="center"
+        android:background="@drawable/table_cell_bg"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>

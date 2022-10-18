@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ViewBusActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_shape_bk"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_login_bk"
+            android:contentDescription="login background" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/DateVB"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Select Date"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/SearchVB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_search"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false">
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:stretchColumns="*">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Sr.No"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Bus Number"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="From Location"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="To Location"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Start Time"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="End Time"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Bus Type"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Available Seats"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="Ticket Price"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerViewVB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarVB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="@color/white" />
+
+
+</RelativeLayout>

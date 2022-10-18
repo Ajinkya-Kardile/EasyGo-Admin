@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EasyGo-Admin</string>
+    <string name="todo">TODO</string>
+    <string name="add_location">Add Location</string>
+    <string name="enter_locality">Enter Locality</string>
+    <string name="locality">Locality</string>
+    <string name="EnterLocationPin">Enter Location Pin</string>
+    <string name="location_pin">Location Pin</string>
+    <string name="select_state">Select State</string>
+    <string name="phone_no">Phone No:</string>
+    <string name="seat_no">Seat No:</string>
+    <string name="name">Name:</string>
+    <string-array name="BusType">
+        <item>A/C Seater</item>
+        <item>A/C Sleeper</item>
+        <item>NON A/C Seater</item>
+        <item>NON A/C Sleeper</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+
+    <TableRow tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/SrNoTBU"
+            android:layout_width="60dp"
+            android:background="@drawable/table_cell_bg"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Sr.No"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/UserNameTBU"
+            android:layout_width="200dp"
+            android:background="@drawable/table_cell_bg"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="User Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MobileNoTBU"
+            android:layout_width="130dp"
+            android:background="@drawable/table_cell_bg"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Mobile No"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/EmailIdTBU"
+            android:layout_width="280dp"
+            android:background="@drawable/table_cell_bg"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Email ID"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+
+</TableLayout>

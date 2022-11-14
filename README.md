@@ -16,7 +16,8 @@ The application contain many features, such as
 - And many more...
 
 Note- You have to add your own google-services.json file from your Firebase console. Otherwise the project don't run properly. 
-firebase account configration required
+
+### Firebase account configration required :
 - Enable  Email/Password signIn method in firebase account. 
 - create Realtime Database and modify rules like
 ```
